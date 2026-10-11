@@ -1,0 +1,14 @@
+{
+  "name": "taskventure",
+  "version": "0.1.0",
+  "private": true,
+  "description": "TaskVenture local task marketplace MVP",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check config.js && node --check db.js && node --check server.js && node --check app.js",
+    "smoke": "node server-smoke-test.js"
+  }
+}

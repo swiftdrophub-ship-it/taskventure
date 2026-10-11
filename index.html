@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#081018" />
+  <title>TaskVenture — Local tasks, real rewards</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="brand" data-view="home" aria-label="Go to dashboard"><span class="brand-mark">TV</span><span>Task<span>Venture</span></span></button>
+      <div class="header-actions"><button id="notificationButton" class="icon-button" aria-label="Notifications">◌<i id="noticeDot"></i></button><button id="resetButton" class="text-button">Reset demo</button></div>
+    </header>
+    <main id="app" tabindex="-1"></main>
+    <nav class="bottom-nav" aria-label="Primary navigation">
+      <button data-view="home"><b>⌂</b><span>Home</span></button><button data-view="discover"><b>⌕</b><span>Discover</span></button><button data-view="post" class="post-nav"><b>＋</b><span>Post</span></button><button data-view="tasks"><b>▣</b><span>My tasks</span></button><button data-view="messages"><b>◇</b><span>Messages</span></button><button data-view="profile"><b>◉</b><span>Profile</span></button>
+    </nav>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <div id="questFx" aria-live="assertive" aria-atomic="true"></div>
+  <script src="app.js"></script>
+</body>
+</html>
